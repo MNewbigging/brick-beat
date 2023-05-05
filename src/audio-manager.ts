@@ -25,6 +25,12 @@ export class AudioManager {
 
   private onBeaterBrickCollision = (event: BeaterBrickCollision) => {
     // Play SFX
+    console.log(`${event.beaterName} hit ${event.brickName}`);
+
+    // Audio file names are BRICK_BEATER
+
+    // Edit brickname
+    
   };
 
   private onBeaterBeaterCollision = (event: BeaterBeaterCollision) => {

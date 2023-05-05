@@ -1,3 +1,31 @@
+export enum BName {
+  RED = 'RED',
+  PINK = 'PINK',
+  PURPLE = 'PURPLE',
+  WOOD = 'WOOD',
+  AUBERGINE = 'AUBERGINE',
+  ULTRAMARINE = 'ULTRAMARINE',
+  COPPER = 'COPPER',
+  BLUE_LIGHT = 'BLUE_LIGHT',
+  CYAN = 'CYAN',
+  TEAL = 'TEAL',
+  STEEL = 'STEEL',
+  GREEN = 'GREEN',
+  LIME = 'LIME',
+  LEMON = 'LEMON',
+  LEMON_ICE = 'LEMON_ICE',
+  ORANGE_RED = 'ORANGE_RED',
+  BROWN = 'BROWN',
+  IRON = 'IRON',
+  ICE = 'ICE',
+  BLUE_DARK = 'BLUE_DARK',
+  YELLOW = 'YELLOW',
+  ORANGE_LIGHT = 'ORANGE_LIGHT',
+  ORANGE_DARK = 'ORANGE_DARK',
+  PETROL = 'PETROL'
+
+}
+
 export enum BrickName {
   RED = 'brick-red',
   PINK = 'brick-pink',
