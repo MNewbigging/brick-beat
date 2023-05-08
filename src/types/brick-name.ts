@@ -14,7 +14,7 @@ export enum BrickName {
   LIME = "LIME",
   LEMON = "LEMON",
   LEMON_ICE = "LEMON_ICE",
-  ORANGE_RED = "ORANGE_RED",
+  BRICK = "BRICK",
   BROWN = "BROWN",
   IRON = "IRON",
   ICE = "ICE",

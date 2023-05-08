@@ -120,7 +120,7 @@
       "sourceSize": { "w": 42, "h": 30 },
       "duration": 100
     },
-    "ORANGE_RED": {
+    "BRICK": {
       "frame": { "x": 630, "y": 0, "w": 42, "h": 30 },
       "rotated": false,
       "trimmed": false,

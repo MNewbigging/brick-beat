@@ -1,12 +1,5 @@
 export enum BeaterName {
-  NORMAL = 'beater-normal',
+  NORMAL = "beater-normal",
 }
 
-export const beaterNames = [
-  'red',
-  'blue',
-  'purple',
-  'green',
-  'cyan',
-  'yellow'
-];
+export const beaterNames = ["RED", "BLUE", "PURPLE", "GREEN", "CYAN", "YELLOW"];

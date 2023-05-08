@@ -1,6 +1,10 @@
-import { Howl } from 'howler';
+import { Howl } from "howler";
+
+import {
+  BeaterBeaterCollision,
+  BeaterBrickCollision,
+} from "./events/event-map";
 import { eventListener } from "./events/event-listener";
-import { BeaterBeaterCollision, BeaterBrickCollision } from "./events/event-map";
 
 /**
  * All audio to be controlled by this class.
@@ -8,29 +12,25 @@ import { BeaterBeaterCollision, BeaterBrickCollision } from "./events/event-map"
  */
 export class AudioManager {
   constructor() {
-    eventListener.on('game-start', this.onGameStart);
+    eventListener.on("game-start", this.onGameStart);
     eventListener.on("beater-brick-collision", this.onBeaterBrickCollision);
     eventListener.on("beater-beater-collision", this.onBeaterBeaterCollision);
   }
 
   private onGameStart = () => {
-    const bgUrl = new URL('/audio/backgroundAudio.wav', import.meta.url).href;
+    const bgUrl = new URL("/audio/backgroundAudio.wav", import.meta.url).href;
     const background = new Howl({
       src: bgUrl,
-      loop: true
+      loop: true,
     });
 
     background.play();
-  }
+  };
 
   private onBeaterBrickCollision = (event: BeaterBrickCollision) => {
-    // Play SFX
-    console.log(`${event.beaterName} hit ${event.brickName}`);
-
     // Audio file names are BRICK_BEATER
-
-    // Edit brickname
-    
+    const fileName = `${event.brickName}_${event.beaterName}`;
+    console.log("sfx to play: ", fileName);
   };
 
   private onBeaterBeaterCollision = (event: BeaterBeaterCollision) => {
