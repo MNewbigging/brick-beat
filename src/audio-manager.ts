@@ -30,10 +30,10 @@ export class AudioManager {
 
   private onBeaterBrickCollision = (event: BeaterBrickCollision) => {
     // Audio file names are BRICK_BEATER
-    const fileName = `/audio/${event.brickName}_${event.beaterName}.wav`;
+    const fileName = `${event.brickName}_${event.beaterName}.wav`;
     console.log("sfx to play: ", fileName);
 
-    const sfxUrl = new URL(fileName, import.meta.url).href;
+    const sfxUrl = new URL("/audio/" + fileName, import.meta.url).href;
     const sfx = new Howl({
       src: sfxUrl,
     });
