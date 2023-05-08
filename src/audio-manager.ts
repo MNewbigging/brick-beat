@@ -22,6 +22,7 @@ export class AudioManager {
     const background = new Howl({
       src: bgUrl,
       loop: true,
+      volume: 0.6,
     });
 
     background.play();
@@ -29,8 +30,15 @@ export class AudioManager {
 
   private onBeaterBrickCollision = (event: BeaterBrickCollision) => {
     // Audio file names are BRICK_BEATER
-    const fileName = `${event.brickName}_${event.beaterName}`;
+    const fileName = `/audio/${event.brickName}_${event.beaterName}.wav`;
     console.log("sfx to play: ", fileName);
+
+    const sfxUrl = new URL(fileName, import.meta.url).href;
+    const sfx = new Howl({
+      src: sfxUrl,
+    });
+
+    sfx.play();
   };
 
   private onBeaterBeaterCollision = (event: BeaterBeaterCollision) => {

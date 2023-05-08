@@ -25,4 +25,14 @@ export enum BrickName {
   PETROL = "PETROL",
 }
 
-export const brickNames = Object.values(BrickName);
+export const brickNames: BrickName[] = [
+  BrickName.BRICK,
+  BrickName.BROWN,
+  BrickName.COPPER,
+  BrickName.CYAN,
+  BrickName.ICE,
+  BrickName.IRON,
+  BrickName.STEEL,
+  BrickName.WOOD,
+  BrickName.YELLOW,
+]; //Object.values(BrickName);
