@@ -25,7 +25,7 @@ export class AudioManager {
       volume: 0.6,
     });
 
-    //background.play();
+    background.play();
   };
 
   private onBeaterBrickCollision = (event: BeaterBrickCollision) => {
