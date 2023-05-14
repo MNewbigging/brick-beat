@@ -29,15 +29,19 @@ export const brickNames: BrickName[] = [
   // BrickName.BRICK,
   // BrickName.BROWN,
   // BrickName.COPPER,
-  // BrickName.CYAN,
+  // BrickName.PETROL,
   // BrickName.ICE,
   // BrickName.IRON,
   // BrickName.STEEL,
   // BrickName.WOOD,
-  // BrickName.YELLOW,
+  BrickName.LEMON_ICE,
   // BrickName.TEAL,
   // BrickName.BLUE_LIGHT,
-  BrickName.ULTRAMARINE,
+  // BrickName.ULTRAMARINE,
+  // BrickName.GREEN,
+  // BrickName.ORANGE_DARK,
+  // BrickName.AUBERGINE,
+  //BrickName.BLUE_DARK,
 ]; //Object.values(BrickName);
 
 /* OLD NAMES
